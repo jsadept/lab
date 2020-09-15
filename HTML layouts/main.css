@@ -3,11 +3,14 @@
 	padding: 0;
 	margin: 0;
 	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
 }
 .h1{
+	font-size: 30px;
 
 }
 .h2{
+	font-size: 26px;
 
 }
 .h3{
@@ -24,6 +27,7 @@ p{
 	background-color: #f6f3ea;
 	width: 100%;
 	height: 100vh;
+	padding-bottom: 40px;
 }
 .logo{
 	grid-area: 2 / 3 / 2 / -3;
@@ -50,9 +54,45 @@ p{
 
 .section{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 200px);
+	grid-template-columns: 1fr;
 	grid-gap: 70px;
 	padding: 100px 100px;
+}
+@media screen and (min-width: 475px) {
+  .section{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+@media screen and (min-width: 600px) {
+  .section{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+@media screen and (min-width: 800px) {
+  .section{
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+}
+@media screen and (min-width: 998px) {
+  .section{
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+}
+@media screen and (min-width: 1360px) {
+  .section{
+		grid-template-columns: repeat(7, 1fr);
+	}
+
+}
+@media screen and (min-width: 1800px) {
+  .section{
+		grid-template-columns: repeat(7, 1fr);
+		grid-gap: 150px;
+	}
 
 }
 .section:nth-of-type(odd){
@@ -60,27 +100,81 @@ p{
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
 }
 
+.section__title-wrapper{
+	grid-area: 1/1/1/-1;
+	text-align: center;
+}
+@media screen and (min-width: 800px) {
+	.section__title-wrapper{
+		text-align: left;
+	}
+
+}
+.section__title{
+	position: relative;
+	display: inline-block;
+}
+.section__title span{
+	color: #ae2472;
+	font-size: 17px;
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+}
+
+
+
+
+
+
+
 
 
 /*cards*/
-
+.card{
+}
 
 .card__preview picture img{
 	width: 100%;
 	height: 100%;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
+.card__preview{
+	position: relative;
+}
+.card__preview:before{
+	background-color: rgba(0,0,0, .4);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: calc(100% - 5px);
+	content: '';
+	transition: all .3s;
+}
+
+.card__preview:hover:before{
+	background-color: rgba(174, 36, 114, .4);
+	transition: all .2s;
+}
 
 
+.card__link:hover .card__title{
+	color: #ae2472;
+	transition: all .2s;
+}
+
+.card__link{
+	text-decoration: none;
+}
 
 .card__title{
 	text-align: center;
 	color: #2e2f2b;
 }
-.card__title:hover{
-	color: #575a4e;
 
-}
 .card__desc{
 	text-align: center;
 
