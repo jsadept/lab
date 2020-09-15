@@ -1,9 +1,22 @@
 
-body{
+.page__content{
 	padding: 0;
 	margin: 0;
+	font-size: 18px;
 }
+.h1{
 
+}
+.h2{
+
+}
+.h3{
+	font-size: 22px;
+	font-weight: 600;
+}
+p{
+	font-size: 16px;
+}
 .header{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -38,8 +51,8 @@ body{
 .section{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 200px);
-	grid-gap: 50px;
-	padding: 100px 20px;
+	grid-gap: 70px;
+	padding: 100px 100px;
 
 }
 .section:nth-of-type(odd){
@@ -51,17 +64,30 @@ body{
 
 /*cards*/
 
-.card__image{
+
+.card__preview picture img{
+	width: 100%;
+	height: 100%;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 
 
+.card__title{
+	text-align: center;
+	color: #2e2f2b;
+}
+.card__title:hover{
+	color: #575a4e;
+
+}
+.card__desc{
+	text-align: center;
+
+}
 
 
-
-
-
+/*mouse*/
 
 
 .mouse {
