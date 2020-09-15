@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 		display: inline-block;
 	}
 </style>
-<body>
+<body class="page__content">
 	
 	 
 	<header class="header">
@@ -28,7 +28,16 @@
 		
 		<section class="section">
 			<article class="card">
-				card1
+				<div class="card__preview">
+					<picture>
+							<source srcset="images/calc/calculator.webp" type="image/webp">
+							<img src="images/calc/calculator.png" alt="Calculator preview">
+					</picture>
+				</div>
+				<div class="card__content">
+					<a href="1-calculator/index.html" class="card__title"><h3 class="h3">Calculator</h3></a>
+					<p class="card__desc paragraph">Vanilla Js</p>
+				</div>
 			</article>
 			<article class="card">
 				card2
