@@ -1,0 +1,23 @@
+.footer{
+	padding: 15px 50px;
+	background-color: #181B1C;
+	color: #959595;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 30px;
+	margin-top: 30px;
+	line-height: 30px;
+	transition: all .5s;
+}
+
+
+@media screen and (min-width: 768px) {
+	.footer{
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
+.git__link{
+	color: whitesmoke;
+}

@@ -1,0 +1,21 @@
+.page__body{
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100% auto;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	height: 100%;
+	position: relative;
+	height: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+	.page__body{
+		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr auto;
+	}
+	
+}

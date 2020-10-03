@@ -1,0 +1,147 @@
+
+.article__main-image{
+	height: 400px;
+}
+
+
+.article-thumb{
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.article-thumb:before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	background-color: rgba(43, 44, 47, .4);
+}
+
+.article-thumb__content{
+	z-index: 1000;
+	padding: 20px;
+}
+
+.article-thumb__item{
+	position: absolute;
+	left: 25px;
+	bottom: 10px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	max-width: 300px;
+	align-items: center;
+
+}
+
+.article-thumb__item .section-article__tag{
+	border-color: #CC9A5A;
+	font-weight: 700;
+	background-color: #CC9A5A;
+	color: white;
+/*	margin-left: 0;*/
+}
+.article-thumb__item > .section-article__tag:hover{
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+
+.article__content{
+	padding: 50px 5%;
+
+}
+
+@media screen and (min-width: 2000px) {
+	.article__content{
+		padding: 50px 20%;
+	}
+	
+}
+
+.article__title{
+	color: #CC9A5A;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+.article-text p{
+	margin: 30px 0;
+}
+.article-text h4{
+	margin-top: 80px;
+}
+.article-text figcaption{
+	text-align: center;
+	color: rgb(204, 154, 90);
+}
+
+
+
+/*aside*/
+
+.one-article__aside{
+	display: grid;
+	grid-gap: 10px;
+	grid-auto-flow: row;
+
+}
+.article-aside__content{
+	height: 100%;
+}
+
+
+.article-thumb__title{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	line-height: 28px;
+	margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	.article-aside__content{
+		height: 300px;
+	}
+	.article__main-image{
+		height: 300px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.one-article__aside{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+
+@media screen and (min-width: 992px) {
+	.one-article__aside{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(10, min-content);
+	}
+}
+
+
+.article-aside__content .article__link .article-thumb:before{
+	background-color: rgba(43, 44, 47, .9);
+	transition: all .5s;
+}
+
+
+.article-aside__content .article__link:hover .article-thumb:before{
+	background-color: rgba(43, 44, 47, .7);
+	transition: all .5s;
+}
+
