@@ -1,0 +1,40 @@
+.page__content { 
+  background-color: #f6f3ea; 
+  font-family: 'Roboto', sans-serif; }
+
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .main-content {
+    width: 930px;
+    margin: 0 auto;
+  }
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards h1{
+  width: 100%; 
+}
+.card{
+  border: 2px solid #E5E5E6;
+  width: 280px;
+  margin: 10px;
+  background-color: #E5E5E6;
+}
+
+.card__image{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #E5E5E6;
+}
+
+.card__content{
+  padding: 30px;
+}
