@@ -1,0 +1,25 @@
+.logo{
+
+}
+.logo__item{
+    margin: 0;
+    padding: 0;
+}
+
+.logo__main-text{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-align: center;
+    color: white;
+}
+.logo__subtext{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+}
+.accent-text{
+    color: #DAA505;
+}

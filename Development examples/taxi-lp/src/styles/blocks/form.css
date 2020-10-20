@@ -1,0 +1,39 @@
+.form{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+.form__title{
+    width: 100%;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+    display: block;
+    background-color: #171717;
+    color: white;
+    padding: 30px 50px;
+    margin-top: 0;
+}
+
+.form__input{
+    width: 40%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E4E4E4;
+}
+
+.form__input::placeholder{
+    color: #5F5F5F;
+}
+.form__input_full{
+    width: 90%;
+}
+.form__button{
+    width: 90%;
+
+}

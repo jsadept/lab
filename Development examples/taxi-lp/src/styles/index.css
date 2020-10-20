@@ -1,0 +1,35 @@
+/* Global */
+
+@import 'variables.css';
+@import 'blocks/body.css';
+@import 'blocks/header.css';
+@import 'blocks/footer.css';
+
+/* Sections */
+@import 'blocks/section.css';
+@import 'blocks/section_1.css';
+@import 'blocks/section_2.css';
+@import 'blocks/section_3.css';
+@import 'blocks/section_4.css';
+@import 'blocks/section_5.css';
+@import 'blocks/section_6.css';
+@import 'blocks/section_7.css';
+
+/* Other */
+@import 'blocks/menu.css';
+@import 'blocks/logo.css';
+@import 'blocks/burger.css';
+
+@import 'blocks/container.css';
+@import 'blocks/form.css';
+@import 'blocks/btn.css';
+@import 'blocks/store-btn.css';
+
+@import 'blocks/copy.css';
+@import 'blocks/social-icons.css';
+@import 'blocks/testi-item.css';
+@import 'blocks/cards.css';
+@import 'blocks/features-list.css';
+
+
+@import 'blocks/media.css';

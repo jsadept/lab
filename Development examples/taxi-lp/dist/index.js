@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.querySelector(".burger"),t=document.querySelector(".menu"),c=document.querySelector(".page__body");e.onclick=function(){e.classList.toggle("burger_active"),t.classList.toggle("menu_active"),c.classList.toggle("fixed")}}();

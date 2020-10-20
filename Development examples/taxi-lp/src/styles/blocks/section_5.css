@@ -1,0 +1,35 @@
+.section_5{
+    overflow: hidden;
+}
+
+.section_5 .section__title{
+    color: black;
+}
+
+.section_5 .section__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section_5 .section__item{
+    width: 45%;
+    position: relative;
+    height: 100%;
+}
+
+.section__content-title{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.section__text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hand{
+    position: relative;
+    bottom: -84px;
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.2));
+}

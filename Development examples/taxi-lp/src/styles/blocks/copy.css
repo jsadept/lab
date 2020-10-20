@@ -1,0 +1,9 @@
+.copy{
+    font-size: 14px;
+    color: white;
+}
+.copy__link{
+    color: #FFC61A;
+    text-decoration: none;
+    margin: 0 20px;
+}

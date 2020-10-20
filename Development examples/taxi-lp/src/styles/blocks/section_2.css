@@ -1,0 +1,17 @@
+.section_2{
+    background-color: #FFC61A;
+    padding: 250px 0 150px;
+}
+.section_2 .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section_2 .section__content{
+    width: 45%;
+}
+
+.section_2 .section__subtitle{
+    color: black;
+}

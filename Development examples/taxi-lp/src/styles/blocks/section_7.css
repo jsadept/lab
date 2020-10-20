@@ -1,0 +1,32 @@
+.section_7{
+    background-color: #FFC61A;
+    text-align: center;
+}
+
+.section_7 .section__header{
+    margin: 0;
+}
+
+.section_7 .section__subtitle{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #120E02;
+    font-weight: 900;
+}
+
+.section_7 .section__title{
+    font-size: 76px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #120E02;
+    transition: all .2s;
+}
+
+.section_7__link{
+    text-decoration: none;
+}
+
+.section_7__link:hover .section__title{
+    color: #49484A;
+    transition: all .2s;
+}

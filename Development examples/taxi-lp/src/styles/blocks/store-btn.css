@@ -1,0 +1,22 @@
+.store-btn{
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #000000;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+}
+
+.store-btn_g{
+    background-image: url('/images/googleplay.jpg');
+}
+
+.store-btn_a{
+    background-image: url('/images/appstore.jpg');
+}
