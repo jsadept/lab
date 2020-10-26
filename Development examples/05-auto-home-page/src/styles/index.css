@@ -1,0 +1,37 @@
+/* Global */
+
+@import 'variables.css';
+@import 'blocks/body.css';
+@import 'blocks/text.css';
+@import 'blocks/banner.css';
+@import 'blocks/cells.css';
+@import 'blocks/container.css';
+@import 'blocks/home-page.css';
+@import 'blocks/links.css';
+@import 'blocks/logo.css';
+@import 'blocks/products.css';
+@import 'blocks/search.css';
+@import 'blocks/social-list.css';
+@import 'blocks/form.css';
+
+
+@import 'blocks/burger.css';
+@import 'blocks/mobile-menu.css';
+@import 'blocks/i.css';
+
+
+
+@import 'header/header.css';
+@import 'header/nav.css';
+
+
+@import 'footer/footer.css';
+
+/*@import 'blocks/header-nav.css';
+@import 'blocks/social.css';
+@import 'blocks/search.css';
+@import 'blocks/btn.css';
+@import 'blocks/copy.css';
+@import 'blocks/text.css';
+@import 'blocks/btn-to-top.css';
+@import 'blocks/logo.css';*/

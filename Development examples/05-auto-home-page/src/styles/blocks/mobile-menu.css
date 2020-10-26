@@ -1,0 +1,30 @@
+.mobile-menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(33, 33, 33);
+    z-index: 999;
+    height: 100vh;
+    overflow: auto;
+    padding: 100px 30px 20px;
+    display: none;
+}
+
+.mobile-menu_active{
+    display: block;
+}
+.mobile-menu__item{
+    display: inline-block;
+    width: 100%;
+    float: none;
+    text-align: left;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.mobile-menu .search{
+    float: right;
+    text-align: right;
+}

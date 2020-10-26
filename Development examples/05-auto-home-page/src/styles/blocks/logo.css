@@ -1,0 +1,18 @@
+.logo{
+	max-width: 200px;
+	text-decoration: none;
+}
+
+.logo__title{
+	font-weight: 900;
+	font-size: 45px;
+	color: #ffffff;
+	margin: 0;
+}
+
+.logo__subtitle{
+	font-weight: 400;
+	font-size: 15px;
+	color: #ffffff;
+	margin: 0;
+}

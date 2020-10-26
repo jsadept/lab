@@ -1,0 +1,58 @@
+.cells{
+}
+.cell{
+	background-color: #303030;
+	width: 50%;
+	overflow: hidden;
+	float: left;
+	padding: 100px 50px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.cell:hover{
+	background-color: #252525;
+}
+
+.cell_dark{
+	background-color: #1C1C1C;
+}
+
+@media screen and (max-width: 650px) {
+	.cell {
+		width: 100%;
+	}
+	.cell_dark{
+		background-color: unset;
+	}
+	.cell:nth-child(odd){
+		background-color: #1C1C1C;
+	}
+}
+.cell__content{
+	width: 45%;
+}
+.cell__img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	max-width: 55%;
+}
+
+.cell__link{
+	text-decoration: none;
+}
+.cell__title{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 35px;
+	font-weight: 900;
+	margin: 0;
+}
+.cell__title:hover{
+	color: #FF3448;
+}
+.cell__text{
+	font-size: 20px;
+	font-weight: 600;
+}

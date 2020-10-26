@@ -1,0 +1,16 @@
+.page__body{
+	margin: 0;
+	padding: 0;
+	background-color: #212121;
+	color: #FFFFFF;
+}
+
+.page__body_fixed{
+	overflow: hidden;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}

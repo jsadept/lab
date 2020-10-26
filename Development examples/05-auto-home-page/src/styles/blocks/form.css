@@ -1,0 +1,29 @@
+.form{
+
+}
+
+.input{
+	width: 100%;
+	background-color: #282828;
+	color: #ffffff;
+	padding: 10px;
+	margin: 20px 0 30px;
+	border: 0;
+}
+
+.form__btn{
+	background-color: #9C1C28;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0 25px;
+	line-height: 38px;
+	border-radius: 30px;
+	border: 0;
+	cursor: pointer;
+}
+
+.form__btn:hover{
+	background-color: #252525;
+}

@@ -1,0 +1,45 @@
+.nav{
+}
+
+.nav__list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__item{
+	float: left;
+}
+
+.nav__item{
+	margin-right: 40px;
+}
+.nav__item:last-child{
+	margin: 0;
+}
+.nav__link{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.nav__link:hover{
+	color: #FF3448;
+}
+
+
+@media screen and (max-width: 900px) {
+	.nav{
+		margin: 20px 0;
+		text-align: left;
+		padding-left: 8px;
+	}
+	.nav__item{
+		float: none;
+		margin-right: 0;
+		margin: 10px 0;
+	}
+	.nav__link{
+		color: rgb(255, 52, 72);
+	}
+}
