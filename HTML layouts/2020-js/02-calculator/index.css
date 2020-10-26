@@ -1,0 +1,139 @@
+.page__content{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f3ea;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: -webkit-min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 50px;
+}
+
+@media screen and (min-width: 900px) {
+    .main-content {
+        grid-template-rows: 1fr;
+        grid-template-columns: -webkit-min-content 1fr;
+        grid-template-columns: min-content 1fr;
+    }
+}
+
+
+.main-content > article {
+    justify-self: center;
+}
+
+.calculator {
+    margin: 50px;
+    width: 200px;
+    height: 450px;
+    background: #FFFFFF;
+    overflow: hidden;
+    border: 3px solid #A7A7A7;
+}
+
+@media screen and (min-width: 768px) {
+    .calculator {
+        height: 600px;
+        width: 450px;
+    }
+}
+
+.calculator__output{
+    display: grid;
+    height: 30%;
+    grid-template-rows: 1fr 2fr;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 0 10px -3px #505697;
+}
+.calculator__operation{
+    overflow: hidden;
+    justify-self: end;
+}
+.calculator__result{
+    overflow: hidden;
+    justify-self: end;
+}
+.calculator__value{
+    display: inline;
+}
+
+.calculator__result > .calculator__value{
+    font-size: 56px;
+}
+
+
+
+
+.calculator__input{
+    z-index: 5;
+    display: grid;
+    width: 100%;
+    height: 70%;
+    background-color: #F1F3F4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#calculate{
+    grid-area: 6/1/7/-1;
+    background-color: #AE2472;
+    color: white;
+}
+
+.calculator__button[name="delete"]{
+    grid-area: 1/1/1/3;
+}
+.calculator__button[name="clear"]{
+    grid-area: 1/3/1/5;
+}
+.calculator__button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    position: relative;
+    font-size: 20px;
+}
+
+
+
+#key{
+    background-color: #1A73E8;
+    color: white;
+}
+#operator{
+    background-color: #BDC3C7;
+}
+.about{
+    padding: 60px;
+}
+
+@media screen and (min-width: 900px) {
+    .about {
+        padding: 30px;
+    }
+}
+
+
+.logo{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 20px;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
