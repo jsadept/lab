@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&subset=latin-ext')
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+//  // // // // // // // //  Header
+// // // // // // // // // // // // // // // // 
+
+//  // //  Header
+.header
+	z-index: 99999
+	position: fixed
+	width: 100%
+	top: 0
+
+//  // //  Header-TOP
+.header-top
+	color: $light-accent
+	width: 100%
+	background-color: $accent
+	height: 26px
+//  // //  Header-BOTTOM
+
+.header-bottom
+	height: 80px
+	background-color: white
+	.header-bottom__content
+		height: 80px
+//  // // // // // // // //  Section banner
+// // // // // // // // // // // // // // // // 
+.banner
+	margin: 50px 0
+	.container-fluide
+		height: 100%
+		.row
+			height: 100%
+	height: 600px
+	.teacher
+		width: 100%
+		margin: 50px 0
+		img
+			width: 100%
+	.banner__text
+		font-size: 1.3rem
+		p 
+			margin: 30px 0 50px
+
+.menu-btn
+	z-index: 115
+	position: absolute
+	top: -20px
+	right: 30px
+	display: block
+	width: 38px
+	height: 30px
+	padding: 20px 5px 0px
+	span
+		position: relative
+		display: block
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: -9px
+		&:after
+			top: 9px
+			content: ""
+			position: absolute
+			left: 0
+			bottom: 9px
+	&.on
+		span
+			background-color: transparent
+			&:after
+				transform: rotate(-45deg) translate(7px, -8px)
+			&:before
+				transform: rotate(45deg) translate(5px, 5px)
+
+.menu__list-item-text
+	text-decoration: none
+	color: black
+	font-weight: 700
+	box-sizing: border-box
+	font-size: .8rem
+	padding: 5px 10px 29px 10px
+	&:hover
+		border-bottom: 3px solid $accent
+		color: black
+		text-decoration: none
+
+.menu__minor-list-item:active .menu__minor-list-item-text, .menu__minor-list-item:hover .menu__minor-list-item-text
+	color: #000000
+
+.menu-btn span,
+.menu-btn span:after,
+.menu-btn span:before
+	width: 100%
+	height: 5px
+	background-color: #888
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+.menu__minor
+	background-color: #122a2f
+	display: flex
+	z-index: 2
+	position: absolute
+	top: 34px
+	left: 0
+	width: 100%
+	height: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: none
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	&.on
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+
+.menu__minor-list-item:active, .menu__minor-list-item:hover > .menu__minor-list-item-text
+	color: #ffdddd
+
+.menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	position: relative
+
+.menu__minor-list-item
+	display: block
+	text-align: center
+	text-decoration: none
+	width: 100%
+	height: 50px
+	&:last-child
+		border: 0
+
+.menu__list-item:last-child, .menu__list-item_after-blocks:last-child
+	margin-right: 0px
+
+.menu__list-item
+	display: inline-block
+	margin-right: 20px
+	position: relative
+	text-decoration: none
+	box-sizing: border-box
+
+.menu__list-content
+	list-style: none
+	padding: 0
+	margin: 0
+
+.menu__minor-list-item-text
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	width: 100%
+	text-decoration: none
+	color: black
+	font-weight: 700
+	font-size: 1.3rem
+	line-height: 4.5rem
+
+.menu__minor-list-content
+	list-style: none
+	padding: 0
+
+.menu__list-item_after-blocks
+	&:last-child
+		&:after
+			width: 0px
+			height: 0px
+	&:after
+		margin-left: 25px
+		content: ""
+		position: absolute
+		top: 35%
+		display: inline-block
+		width: 5px
+		height: 5px
+		background-color: #000
+
+
+
+//  // // // // // // // //  Section Problems
+// // // // // // // // // // // // // // // // 
+.problems
+	padding: 90px 50px
+	background-color: $bg-3
+
+.problem-img
+	width: 100%
+	height: 100%
+	margin-bottom: 50px
+	img
+		width: 100%
+		height: 100%
+//  // // // // // // // //  Section Ubout
+// // // // // // // // // // // // // // // //
+
+.about
+	position: relative
+	
+	padding: 90px 30px
+
+
+.product-item
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	
+
+
+.product-item__icon
+	width: 80%
+	margin: 50px 0
+	img
+		width: 200px
+		height: 150px	
+.product-item__title
+	font-size: 1rem
+	font-weight: bold
+	
+
+.product-item__desc
+	font-size: .9rem
+	margin: 30px 0
+
+
+
+.bd-video
+	position: relative
+
+
+
+
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+.testimonials
+	padding: 90px 50px
+
+.quote
+	position: absolute
+	left: 40px
+	top: 30px
+	width: 80px
+	height: 80px
+
+
+.media
+	padding: 60px
+
+.media__img
+	float: left
+
+.media__desc
+	padding: 10px 60px
+	float: left
+	width: 600px
+
+.media__photo
+	width: 200px
+	height: 200px
+	border-radius: 100px
+	overflow: hidden
+	img 
+		width: 200px
+		height: 200px
+		object-position: top
+		object-fit: cover	
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+.video-container 
+	height: 500px
+	width: 100%
+	padding-bottom: 500px
+	position: relative
+	a 
+		background: url('https://image.flaticon.com/icons/svg/109/109700.svg') center no-repeat
+		background-size: cover
+		box-sizing: border-box
+		height: 80px
+		width: 80px
+		margin: 30px 0 30px -11px
+		// left: 47%
+		position: relative
+		text-indent: -999em
+		// top: 45%
+		cursor: pointer
+		
+		&:hover 
+			border-left-color: #f00
+
+	img 
+		display: block
+	iframe, 
+	object, 
+	embed,
+	img 
+		height: 100%
+		left: 0
+		position: absolute
+		top: 0
+		width: 100%
+	p 
+		text-align: center
+		display: inline-block
+		position: relative
+		font-size: 2rem
+		text-transform: uppercase
+		font-weight: 500
+
+
+.control
+	height: 500px
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+.FAQ
+	padding: 90px 50px
+
+
+
+
+.accordion-toggle
+	cursor: pointer
+	padding: 20px
+	position: relative
+	color: $accent
+	background-color: $bg-3
+	margin-bottom: 10px
+	-webkit-box-shadow: 0px 7px 17px -7px  rgba(0,0,0,0.2), 5px 5px 9px 13px rgba(0,0,0,0)
+	box-shadow: 0px 7px 17px -7px  rgba(0,0,0,0.2), 5px 5px 9px 13px rgba(0,0,0,0)
+	&.active:after
+		content: ""
+		position: absolute
+		right: 40px
+		top: 50%
+		width: 0
+		height: 0
+		border-bottom: 5px solid  $hr
+		border-left: 5px solid rgba(0, 0, 0, 0)
+		border-right: 5px solid rgba(0, 0, 0, 0)
+	&:before
+		content: ""
+		position: absolute
+		right: 40px
+		top: 50%
+		width: 0
+		height: 0
+		border-top: 5px solid $accent
+		border-left: 5px solid rgba(0, 0, 0, 0)
+		border-right: 5px solid rgba(0, 0, 0, 0)
+	&.active:before
+		display: none
+
+.accordion-content
+	display: none
+	padding: 20px
+
+.accordion-toggle.active
+	color: $hr
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+.offer
+	padding: 90px 50px
+	background-color: $accent
+	color: white
+
+.offer__content
+	height: 100%	
+	p 
+		margin: 20px 0 50px
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+.footer 
+	text-align: center
+	
+	padding-top: 60px
+	background-color: $dark
+	color: $dark-low
+	.logo
+		margin: 0px 0 30px
+	.site-desc
+		margin: 10px 0 10px
+	.contants
+	.copy
+		margin: 80px 0 20px
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  BLOCK
+// // // // // // // // // // // // // // // // 
+
+//  // // // // // // // //  COOMON BLOCK
+// // // // // // // // // // // // // // // // 
+
+hr 
+	width: 55px
+	height: 6px
+	background-color: $hr
+	border: 0
+	border-radius: 100px
+	margin: 0
+
+
+.section-title
+	margin-bottom: 50px
+
+
+.standart-list
+	padding: 20px 16px
+	margin: 0
+
+
+.standart-list-item	
+	margin-bottom: 15px
+	font-size: 1rem
+	font-weight: 600
+	&:last-child
+		margin: 0
+	span
+	
+
+.bd-btn
+	color: white
+	background-color: $hr
+	padding: 10px 70px
+	border-radius: 100px
+	text-transform: uppercase
+	-webkit-box-shadow: 0px 7px 17px -7px  rgba(0,0,0,0.2), 5px 5px 9px 13px rgba(0,0,0,0)
+	box-shadow: 0px 7px 17px -7px  rgba(0,0,0,0.2), 5px 5px 9px 13px rgba(0,0,0,0)
+	transition: all .2s
+	&:hover
+		color: $bg-3
+		text-decoration: none
+		background-color: darken($hr, 10%)
+		transition: all .2s
+		
+#offer
+	position: relative
+	top: -200px
+
+@import "media" // Always at the end

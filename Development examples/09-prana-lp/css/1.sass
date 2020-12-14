@@ -1,0 +1,86 @@
+
+//colors
+$black: #000000
+$white: #ffffff
+$c-bg-menu: #fbfbfb
+$c-bg-menu-active: #ffe600
+//
+body
+  background-color: #000
+  
+#toggle
+	display: none
+	width: 28px
+	span
+		position: relative
+		display: block
+		&:after
+			top: 9px
+	&.on
+		span
+			background-color: transparent
+			&:before
+				transform: rotate(45deg) translate(5px, 5px)
+			&:after
+				transform: rotate(-45deg) translate(7px, -8px)
+		& + #menu
+			opacity: 1
+			visibility: visible
+
+#toggle span:after 
+	content: ""
+	position: absolute
+	left: 0
+
+#toggle span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+
+
+#toggle span,
+#toggle span:after,
+#toggle span:before
+	width: 100%
+	height: 5px
+	background-color: $sec-lc
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+.toggle-btn
+	display: flex	
+
+//hidden-menu//
+.header__menu-hidden
+		background-color: $main-dc
+		display: none
+		padding: 0
+		ul
+			margin: 0
+			padding: 0
+
+			li
+				display: block
+				text-align: center
+				text-decoration: none
+				border-bottom: 1px solid white
+				a
+					display: block
+					height: 100%
+					width: 100%
+					text-decoration: none
+					color: white
+					font-weight: 700
+					font-size: 16px
+					line-height: 4.5rem
+				&:active, &:hover
+					a
+						color: black
+					background-color: $sec-c
+			li:last-child
+				border: 0
+//
+
+  

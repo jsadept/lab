@@ -1,0 +1,166 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	header 
+		div.bd-flex-container
+			width: 95%
+
+	.objects
+		div.bd-flex-container 
+			width: 50%	
+	.models
+		.bd-flex-container 
+			align-content: space-evenly
+			min-height: 100vh			
+	section.video
+		.bd-flex-container
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 0
+			iframe:first-child
+				margin-bottom: 20px
+		
+	.contact
+		.bd-flex-container 
+			.bd-flex-item
+				width: 50%
+				align-items: center
+				display: flex
+				flex-direction: column
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	header
+		.header__logo
+			width: 10%
+			span
+				font-size: .9rem
+	.objects
+		div.bd-flex-container 
+			width: 60%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	body, html 
+		font-size: 12px
+	section
+		padding: 1rem 0 3rem 0
+	header
+		.header__logo
+			width: 70%
+			span
+				font-size: 1.5rem
+		.header__menu
+			display: none	
+	#toggle
+		display: block	
+				
+	.objects
+		.bd-flex-item
+			margin: 10px 0
+	.models
+
+		.bd-flex-container 
+			align-content: space-evenly
+			min-height: 150vh			
+	.description__media
+		flex-direction: column
+		&__item
+			max-width: 100%
+		&__content
+			width: 100%
+			margin-bottom: 80px
+			h3
+				text-align: center
+
+	.advantages__list
+		// padding: 10px
+		flex-direction: column	
+		.bd-flex-item
+			width: 100%	
+			margin-bottom: 40px
+		
+
+	.video 
+		.bd-flex-container 
+			iframe
+				width: 300px
+				height: 200px
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	ul 
+		padding-left: 10px
+	.banner
+		height: 20rem
+	.banner__title
+		h1
+			font-size: 3rem
+		p
+			font-size: 1rem
+	.video 
+		.bd-flex-container 
+			iframe
+				width: 300px
+				height: 200px
+	.contact
+		.bd-flex-container 
+			.bd-flex-item	
+				p	
+					font-size: 1.2rem	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

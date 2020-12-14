@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="exchange" unicode="&#xf0ec;" d="M1000 189v-107q0-7-5-12t-13-6h-768v-107q0-7-5-12t-13-6q-6 0-13 6l-178 178q-5 6-5 13 0 8 5 13l179 178q5 5 12 5 8 0 13-5t5-13v-107h768q7 0 13-5t5-13z m0 304q0-8-5-13l-179-178q-5-6-12-6-8 0-13 6t-5 12v107h-768q-7 0-13 6t-5 12v107q0 8 5 13t13 5h768v107q0 8 5 13t13 5q6 0 13-5l178-178q5-5 5-13z" horiz-adv-x="1000" />
+
+<glyph glyph-name="youtube-play" unicode="&#xf16a;" d="M397 221l270 139-270 141v-280z m103 481q94 0 181-3t128-5l41-2q0 0 9-1t13-2 13-2 16-5 16-7 17-11 16-15q4-3 9-10t16-33 15-56q4-36 7-76t3-64v-98q1-81-10-162-4-30-14-55t-18-35l-8-9q-7-8-16-15t-17-10-16-7-16-5-13-2-13-2-9-1q-140-11-350-11-115 2-201 4t-111 4l-28 3-20 2q-20 3-30 5t-29 12-31 23q-4 3-9 10t-16 33-15 56q-4 36-7 76t-3 64v98q-1 81 10 162 4 31 14 55t18 35l8 9q8 9 16 15t17 11 16 7 16 5 13 2 13 2 9 1q140 10 350 10z" horiz-adv-x="1000" />
+
+<glyph glyph-name="codeopen" unicode="&#xf1cb;" d="M121 198l336-225v201l-186 124z m-35 80l108 72-108 72v-144z m457-305l337 225-151 100-186-124v-201z m-43 275l152 102-152 102-152-102z m-229 154l186 124v201l-336-225z m535-52l108-72v144z m-77 52l151 100-337 225v-201z m271 100v-304q0-23-19-36l-457-305q-12-7-24-7t-24 7l-457 305q-19 13-19 36v304q0 23 19 36l457 305q12 7 24 7t24-7l457-305q19-13 19-36z" horiz-adv-x="1000" />
+
+<glyph glyph-name="twitter-squared" unicode="&#xf304;" d="M714 510q-31-14-67-19 38 22 52 65-37-21-75-28-34 36-85 36-49 0-83-34t-35-83q0-16 3-27-72 4-135 37t-107 86q-16-28-16-59 0-64 51-98-27 1-56 15v-1q0-42 28-75t68-40q-16-5-28-5-7 0-22 3 12-36 42-59t67-23q-64-50-145-50-15 0-28 2 82-53 180-53 62 0 117 20t94 53 67 76 42 91 13 94q0 10 0 15 35 25 58 61z m143 108v-536q0-66-47-113t-114-48h-535q-67 0-114 48t-47 113v536q0 66 47 113t114 48h535q67 0 114-48t47-113z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="facebook-squared" unicode="&#xf308;" d="M696 779q67 0 114-48t47-113v-536q0-66-47-113t-114-48h-104v333h111l16 129h-127v83q0 31 13 46t51 16l68 1v115q-35 5-100 5-75 0-121-44t-45-127v-95h-112v-129h112v-333h-297q-67 0-114 48t-47 113v536q0 66 47 113t114 48h535z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,19 @@
+
+RewriteEngine on
+
+DirectoryIndex apanel.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^.*$ apanel.php?q=$0 [L,NC,QSA]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://site.com/ [R=301,L]
+
+<Files ~ "\.(ini|log)$">
+
+deny from all
+
+</Files>
+
+Options -Indexes
